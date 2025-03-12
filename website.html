@@ -3,32 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GVEST</title>
     <link rel="stylesheet" href="websitecss.css">
     <script src="websitejs.js" defer></script>
+    <link rel="icon" href="images/gVestLogo 1.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+
 </head>
 <body>
     <div  id="landingPageContainer" class="websiteContainers">
         <div id="menuContainer">
-            <img src="./images/gVestLogo 1.png" alt="companyLogo">
-            <br>
-            <br>
-            <button id="">About</button>
-            <button id="">Investments</button>
-            <button id="">Contacts</button>
-            <button id="">IRA</button>
-            <br>
-            <br>
-            <button id="loginButton">Log in</button>
-            <button id="investButton">Ready To Invest?</button>
+            <img id="companyLogo" src="./images/gVestLogo 1.png" alt="companyLogo">
+            <div id="menuMiddle">
+                <a class="menuButton" id="about"><b>About</b></a>
+                <a class="menuButton" id="investment"><b>Investments</b></a>
+                <a class="menuButton" id="Contacts"><b>Contacts</b></a>
+                <!-- <button id="IRA">IRA</button> -->
+            </div>
+            <div class="logInvest">
+                <!-- <button class="menuButton"id="loginButton"><b>Login</b></button> -->
+                
+                <a class="menuButton" id="loginButton"><b>Login</b></a>
+                <button id="investButton"><b>Ready To Invest?</b></button>
+            </div>
         </div>
-        <br>
-        <br>
+        <!-- <br> -->
+        <!-- <br> -->
         <div id="welcomeContainer">
-            <p id="welcomemessage">Empowering Your Investments, Building Your Future.</p>
-            <p>Join us ar Gtext to explore investment opportunites that secure your financial freedom</p>
-            <button>Ready to Invest?</button>
-            <button>Learn More</button>
+            <div id="welcome">
+            <h1 id="welcomeMessage">Empowering Your Investments, Building Your Future.</h1>
+            <p id="welcomeMessage2">Join us ar Gtext to explore investment opportunites that secure your financial freedom</p>
+        </div>
+        
+            <div id="imtiredofnamingstuff">
+                <!-- <a id="readytoinvest">Ready to Invest?</a> -->
+                <button id="investButtons"> 
+                    Ready to Invest? 
+                    <span class="material-symbols-outlined">
+                    arrow_forward
+                    </span>
+                </button>
+                <a id="learnmore">Learn More</a>
+            </div>
         </div>
     </div>
 </body>

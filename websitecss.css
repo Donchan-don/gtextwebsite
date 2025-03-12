@@ -1,21 +1,182 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-  }
-
-#landingPageContainer{
-    background: url(./images/bg__.webp) ;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: Comfortaa, sans-serif;
+}
+@font-face {
+  font-family: Comfortaa;
+  src: url(fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Pacifico;
+  src: url(fonts/Pacifico/Pacifico-Regular.ttf);
+}
+a {
+  cursor: pointer;
 }
 
-.home {
-  background: url("../../public/images/bg__.webp");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-  }
+/* .home {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+} */
+
+#landingPageContainer {
+  background: url(./images/bg__.webp);
+  background-position: 50%;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#menuContainer {
+  display: flex;
+  justify-content: space-between;
+  /* color: white; */
+  background-color: white;
+  /* margin: 1rem 100px auto 100px; */
+  border-radius: 3rem;
+  align-items: center;
+  width: 90%;
+  /* height: auto; */
+  margin: 0.5rem 1rem 1rem 1rem;
+  padding: 1rem;
+  position: fixed;
+}
+
+#companyLogo,
+.menuButton,
+#readytoinvest {
+  /* margin: 1rem; */
+}
+
+#companyLogo {
+  /* margin: 1rem; */
+}
+
+#menuMiddle {
+  /* margin: 1rem; */
+  display: flex;
+  gap: 1rem;
+}
+
+.menuButton {
+  /* border: 0px;  */
+  /* background-color: white; */
+  /* color: black; */
+  /* margin: 0.1rem; */
+  /* border: .1rem solid black; */
+}
+
+.menuButton:hover {
+  color: #8a0b0b;
+  text-decoration: underline;
+  transition: color 100ms ease-in-out, text-decoration 300ms ease-in-out;
+  transform-origin: left;
+}
+
+.menuButton:hover::after {
+  /* color: #8a0b0b; */
+  /* text-decoration: underline; */
+  /* transition: color 100ms ease-in-out, text-decoration 300ms ease-in-out; */
+  /* transform-origin: left;
+  transform: scaleX(1); */
+}
+
+.logInvest {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+#investButton {
+  border: none;
+  background-color: #8a0b0b;
+  /* margin: 0.9rem; */
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+#investButton:hover {
+  background-color: #320303;
+}
+
+#welcomeContainer {
+  /* margin: 40vh auto auto auto; */
+  /* border: .1rem solid black; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+
+#welcome {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  /* justify-content: ; */
+  align-items: center;
+}
+
+#imtiredofnamingstuff {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  /* flex-direction: row; */
+  /* margin: auto; */
+  /* padding: auto; */
+}
+
+#welcomeMessage2 {
+  font-size: 1rem;
+}
+
+#investButtons {
+  border: none;
+  background-color: #8a0b0b;
+  /* margin: 0.9rem; */
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#investButtons:hover {
+  background-color: #320303;
+}
+
+/* #welcomeMessage, #welcomeMessage2, #learnmore, #readytoinvest{
+  color: white;
+  text-align: center;
+} */
+
+#learnmore {
+  /* margin: auto; */
+  
+}
+#learnmore:hover{
+  text-decoration: underline;
+}
+
+#learnmore, #readytoinvest{
+  cursor: pointer;
+}
+#readytoinvest {
+  /* background-color: #8a0b0b;
+  padding: 1rem;
+  border-radius: 1rem; , */
+}
