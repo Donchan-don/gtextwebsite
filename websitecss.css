@@ -52,7 +52,9 @@ a {
   position: fixed;
 }
 
-#companyLogo,.menuButton,#readytoinvest {
+#companyLogo,
+.menuButton,
+#readytoinvest {
   /* margin: 1rem; */
 }
 
@@ -103,6 +105,10 @@ a {
   border-radius: 1rem;
   color: white;
 }
+#menu {
+  cursor: pointer;
+  display: none;
+}
 
 #investButton:hover {
   background-color: #320303;
@@ -137,15 +143,15 @@ a {
   /* padding: auto; */
 }
 
-#welcomeMessage{
-  margin-top: 50%;
-  margin: auto 2rem;
+#welcomeMessage {
+  /* margin-top: 50%; */
+  /* margin: auto 2rem; */
 }
 
 #welcomeMessage2 {
   /* font-size: 1rem; */
   /* margin: 2rem */
-  margin: auto 2rem;
+  /* margin: auto 2rem; */
 }
 
 #investButtons {
@@ -162,80 +168,146 @@ a {
 
 #investButtons:hover {
   background-color: #320303;
-} 
+}
 
 /* #welcomeMessage, #welcomeMessage2, #learnmore, #readytoinvest{
   color: white;
   text-align: center;
-} */ 
+} */
 
 #learnmore {
   /* margin: auto; */
-  
 }
-#learnmore:hover{
+
+#learnmore:hover {
   text-decoration: underline;
 }
 
-#learnmore, #readytoinvest{
+#learnmore,
+#readytoinvest {
   cursor: pointer;
 }
+
 #readytoinvest {
   /* background-color: #8a0b0b;
   padding: 1rem;
   border-radius: 1rem; , */
 }
 
-@media (min-width: 425px) {
-  .welcomes{
-    font-size: 0.5rem;
-  }
-  #investButtons, #learnmore{
-    font-size: 0.4rem;
+@media (max-width: 1024px) {
+  #menuContainer {
     padding: 0.5rem;
   }
-  #companyLogo{
-    width: 2rem;
-    height: auto;
-  }
-  .menuButton{
-    font-size: 0.5rem;
-  }
-  #menuMiddle{
-    gap: 0.5rem;
-  }
-  #logInvest{
-    gap: 0.2rem;
-  }
-  #investButton{
-    font-size: 0.4rem;
-    padding: 0.4rem;
+
+  #welcomeContainer {
+    height: 100%;
+    margin-top: 2rem;
   }
 }
 
-@media (min-width: 768px) {
-  .welcomes{
-    transform: translateY(1rem);
-    font-size: 1.2rem;
-    text-align: center;
-  }
-  #welcomeMessage{
-    text-align: center;
-  }
-  #investButtons, #learnmore{
-    text-align: center;
-    padding: 1rem;
-  }
-  #learnmore{
-    /* transform: translateY(1rem); */
-  }
-  #imtiredofnamingstuff{
-    align-items: center;
-    justify-items: center;
-    margin-top: 1rem;
+@media (max-width: 945px) {
+  #welcomeMessage {
+    font-size: 1.6rem;
   }
 }
-@media (min-width: 2560px) {
+
+@media (max-width: 765px) {
+  #menuContainer {
+    padding: 0.8rem;
+  }
+
+  #welcomeMessage {
+    font-size: 1.3rem;
+  }
+
+  #welcomeMessage2 {
+    font-size: 0.8rem;
+  }
+
+  #menu {
+    display: block;
+    font-size: 2rem;
+  }
+
+  #menuMiddle,
+  .logInvest {
+    flex-direction: column;
+    text-align: center;
+    background: white;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px 0;
+  }
+
+  .menuBox {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 50%;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  #investButtons {
+    padding: 0.6rem;
+  }
+}
+
+@media (max-width: 580px) {
+  #welcomeMessage {
+    font-size: 1.1rem;
+  }
+
+  #welcomeMessage2 {
+    font-size: 0.6rem;
+  }
+
+  #companyLogo {
+    width: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  #welcomeMessage {
+    font-size: 0.9rem;
+  }
+
+  #welcomeMessage2 {
+    font-size: 0.5rem;
+  }
+
+  #investButtons {
+    padding: 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  #learnmore {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 393px) {
+  #welcomeMessage {
+    font-size: 0.7rem;
+  }
+
+  #welcomeMessage2 {
+    font-size: 0.4rem;
+  }
+}
+
+/* @media (max-width: 2560px) {
   #welcome{
     padding-bottom: 1rem;
     gap: 1rem;
@@ -273,4 +345,60 @@ a {
     min-height: auto;
     min-width: 2rem;
   }
-}
+}  */
+
+/* @media (min-width: 320px) {
+  .welcomes{
+    font-size: 0.5rem;
+  }
+  #investButtons, #learnmore{
+    font-size: 0.4rem;
+    padding: 0.5rem;
+  }
+  #companyLogo{
+    width: 2rem;
+    height: auto;
+  }
+  .menuButton{
+    font-size: 0.5rem;
+  }
+  #menuMiddle{
+    gap: 0.5rem;
+  }
+  /* #logInvest{
+    
+  } 
+  #loginButton{
+    transform: translateX(0.9rem);
+  }
+  #investButton{
+    font-size: 0.4rem;
+    padding: 0.4rem;
+  }
+  .smthn{
+    transform: translateX();
+  }
+} */
+
+/* @media (min-width: 768px) {
+  .welcomes{
+    transform: translateY(1rem);
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  #welcomeMessage{
+    text-align: center;
+  }
+  #investButtons, #learnmore{
+    text-align: center;
+    padding: 1rem;
+  }
+  #learnmore{
+    transform: translateY(1rem);
+  }
+  #imtiredofnamingstuff{
+    align-items: center;
+    justify-items: center;
+    margin-top: 1rem;
+  }
+} */

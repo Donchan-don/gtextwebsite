@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GVEST</title>
-    <link rel="stylesheet" href="websitecss.css">
+    <link rel="stylesheet" href="websitecss.css" />
     <script src="websitejs.js" defer></script>
-    <link rel="icon" href="images/gVestLogo 1.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+    <link rel="icon" href="images/gVestLogo 1.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div id="landingPageContainer" class="websiteContainers">
+      <div id="menuContainer">
+        <img
+          id="companyLogo"
+          src="./images/gVestLogo 1.png"
+          alt="companyLogo"
+        />
+        <div id="menuMiddle" class="hidden">
+          <a class="menuButton" id="about"><b>About</b></a>
+          <a class="menuButton" id="investment"><b>Investments</b></a>
+          <a class="menuButton" id="Contacts"><b>Contacts</b></a>
+          <!-- <button id="IRA">IRA</button> -->
+        </div>
+        <div class="logInvest hidden">
+          <!-- <button class="menuButton"id="loginButton"><b>Login</b></button> -->
+          <a class="menuButton" id="loginButton"><b>Login</b></a>
+          <button id="investButton"><b>Ready To Invest?</b></button>
+        </div>
+        <span id="menu" class="material-symbols-outlined"> menu </span>
+      </div>
+      <!-- <br> -->
+      <!-- <br> -->
+      <div id="welcomeContainer">
+        <div id="welcome">
+          <h1 class="welcomes" id="welcomeMessage">
+            Empowering Your Investments, Building Your Future.
+          </h1>
+          <p class="welcomes" id="welcomeMessage2">
+            Join us ar Gtext to explore investment opportunites that secure your
+            financial freedom
+          </p>
+        </div>
 
-</head>
-<body>
-    <div  id="landingPageContainer" class="websiteContainers">
-        <div id="menuContainer">
-            <img id="companyLogo" src="./images/gVestLogo 1.png" alt="companyLogo">
-            <div id="menuMiddle">
-                <a class="menuButton" id="about"><b>About</b></a>
-                <a class="menuButton" id="investment"><b>Investments</b></a>
-                <a class="menuButton" id="Contacts"><b>Contacts</b></a>
-                <!-- <button id="IRA">IRA</button> -->
-            </div>
-            <div class="logInvest">
-                <!-- <button class="menuButton"id="loginButton"><b>Login</b></button> -->
-                
-                <a class="menuButton" id="loginButton"><b>Login</b></a>
-                <button  id="investButton"><b>Ready To Invest?</b></button>
-            </div>
+        <div id="imtiredofnamingstuff">
+          <!-- <a id="readytoinvest">Ready to Invest?</a> -->
+          <button id="investButtons">
+            Ready to Invest?
+            <span class="material-symbols-outlined"> arrow_forward </span>
+          </button>
+          <a id="learnmore">Learn More</a>
         </div>
-        <!-- <br> -->
-        <!-- <br> -->
-        <div id="welcomeContainer">
-            <div id="welcome">
-            <h1 class="welcomes" id="welcomeMessage">Empowering Your Investments, Building Your Future.</h1>
-            <p class="welcomes" id="welcomeMessage2">Join us ar Gtext to explore investment opportunites that secure your financial freedom</p>
-        </div>
-        
-            <div id="imtiredofnamingstuff">
-                <!-- <a id="readytoinvest">Ready to Invest?</a> -->
-                <button id="investButtons"> 
-                    Ready to Invest? 
-                    <span class="material-symbols-outlined">
-                    arrow_forward
-                    </span>
-                </button>
-                <a id="learnmore">Learn More</a>
-            </div>
-        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
